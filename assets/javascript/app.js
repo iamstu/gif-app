@@ -9,7 +9,7 @@ console.log("working")
 $("#button-area").on("click", ".gif-btn", function(){
     event.preventDefault();
     var buttonValue = $(this).text();
-    var queryUrl = "https://api.giphy.com/v1/gifs/search?q=" + buttonValue + "&api_key=F7O0JincFn8dCCobvfN2I80xj14GvuX2&limit=3";
+    var queryUrl = "https://api.giphy.com/v1/gifs/search?q=" + buttonValue + "&api_key=F7O0JincFn8dCCobvfN2I80xj14GvuX2&limit=10";
     console.log("still working");
     console.log(buttonValue);
     $("#gif-area").empty();
@@ -41,6 +41,7 @@ $("form").on("click", "#add-gif", function(){
     if (searchTerm.length > 0){
     gifButtons.push(searchTerm);
     buttonCreation();
+    $("#gif-input").val("");
     }
 });
 
@@ -48,7 +49,7 @@ function buttonCreation(){
     $("#button-area").empty();
 
     for (var i = 0; i < gifButtons.length; i++){
-        $("#button-area").append($("<button>").attr("class", "gif-btn").text(gifButtons[i]));
+        $("#button-area").append($("<button>").attr("class", "gif-btn btn btn-info").text(gifButtons[i]));
     }
 }
 

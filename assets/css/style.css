@@ -1,0 +1,25 @@
+.flex-container{
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+}
+
+.flex-container div{
+    margin: 10px;
+}
+
+.gif-form{
+    margin: 15px 0 15px 0;
+    float: right;
+    clear: both; 
+}
+
+header{
+    background-color: #DCDCDC;
+}
+
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+}
