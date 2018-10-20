@@ -29,6 +29,8 @@ The user can then click a playing gif to return it to its still state.
 
 If the user wants to find a different gif they can put a new term into the search field and the term will be added to the list at the top.
 
+Try it out [here](https://iamstu.github.io/gif-app/)
+
 
 Technologies used: 
 - Giphy API
